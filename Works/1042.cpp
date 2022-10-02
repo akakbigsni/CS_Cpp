@@ -1,17 +1,20 @@
 #include <iostream>
+#include <cstring>
+using namespace std;
+
+#define N 1000
 int main()
 {
-    int i, j;
-    char a[100];
-    std::cin.getline(a,100);
-    for (i = 0; i <=100; i++)
+    char X[N];
+    cin.getline(X, N);
+    int a = 0, b = 0;
+    for (int i = 0; i < strlen(X); i++)
     {
-        if (a[i] == "\r")
+        if (X[i] == '\r')
             break;
-        if (a[i] >= '0' && a[i] <= '9')
-        {
-            j++;
-        }
+        if (X[i] >= '0' && X[i] <= '9')
+            a++;
     }
-    std::cout << j;
+    cout << a;
+    return 0;
 }
