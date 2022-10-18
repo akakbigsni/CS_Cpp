@@ -1,7 +1,7 @@
-#include<iostream>
+#include <iostream>
 int main()
 {
-    double a, b;
-    std::cin >>a;
-    std::cout <<32+a*1.8;
+    double a;
+    std::cin >> a;
+    std::cout << a * 1.8 + 32;
 }
