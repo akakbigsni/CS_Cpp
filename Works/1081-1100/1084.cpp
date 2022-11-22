@@ -6,19 +6,11 @@ int main()
     for (int i = 1; i < 7; i++)
     {
         std::cin >> a[i];
-        if (a[i] - a[i - 1] > 0)
-            up++;
-        else if (a[i] - a[i - 1] == 0)
-            up++, down++;
-        else
-            down++;
     }
-    if (up + down == 12)
-        std::cout << "EQUAL";
-    else if (up == 6)
+    if (a[1] == 2)
         std::cout << "UP";
-    else if (down == 6)
-        std::cout << "DOWN";
+    else if (a[0] == 1)
+        std::cout << "EQUAL";
     else
-        std::cout << "OTHER";
+        std::cout << "DOWN";
 }
